@@ -331,6 +331,9 @@
 }
 
 @media (min-width: 1024px) {
+  .footer__nav .footer__heading {
+    text-align: center;
+  }
   .footer__nav ul {
     display: block;
     columns: 2;
