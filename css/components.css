@@ -330,6 +330,18 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .footer__nav ul {
+    display: block;
+    columns: 2;
+    column-gap: 32px;
+  }
+  .footer__nav ul li {
+    margin-bottom: 10px;
+    break-inside: avoid;
+  }
+}
+
 /* ============================================================
    PAGE HERO (internal pages)
    ============================================================ */
