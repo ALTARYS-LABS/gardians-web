@@ -45,6 +45,13 @@
   display: block;
 }
 
+@media (max-width: 479px) {
+  .btn {
+    padding: 11px 20px;
+    font-size: 0.875rem;
+  }
+}
+
 /* ============================================================
    NAVIGATION
    ============================================================ */
@@ -206,7 +213,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 48px;
-  padding: 64px 0 48px;
+  padding-top: 64px;
+  padding-bottom: 48px;
 }
 
 .footer__brand img {
@@ -310,7 +318,8 @@
   .footer__main {
     grid-template-columns: 1fr;
     gap: 40px;
-    padding: 48px 0 32px;
+    padding-top: 48px;
+    padding-bottom: 32px;
   }
 }
 
