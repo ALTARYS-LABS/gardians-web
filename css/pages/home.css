@@ -55,6 +55,17 @@
   flex-wrap: wrap;
 }
 
+/* Desktop/tablet: equal-width hero buttons (both sized to the wider one) */
+@media (min-width: 768px) {
+  .hero__ctas {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero__ctas .btn {
+    text-align: center;
+  }
+}
+
 /* Hero image frame with L-shaped yellow corners */
 .hero__image-frame {
   position: relative;
