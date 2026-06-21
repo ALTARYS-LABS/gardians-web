@@ -5,7 +5,7 @@
    ============================================================ */
 .testimonial-featured {
   background: var(--color-black);
-  padding: 80px 0;
+  padding: var(--spacing-section) 0;
 }
 
 .testimonial-featured__inner {

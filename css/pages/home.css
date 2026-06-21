@@ -302,6 +302,11 @@
   .asap-image-wrapper { order: 2; }
 
   .asap-features { grid-template-columns: 1fr; }
+
+  .hero__ctas {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 @media (max-width: 479px) {

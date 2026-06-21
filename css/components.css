@@ -345,6 +345,18 @@
   font-weight: 700;
 }
 
+@media (max-width: 767px) {
+  .page-hero {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  .page-hero h1 { font-size: 2.1rem; }
+}
+
+@media (max-width: 479px) {
+  .page-hero h1 { font-size: 1.875rem; }
+}
+
 /* ============================================================
    CTA BANNER
    ============================================================ */
