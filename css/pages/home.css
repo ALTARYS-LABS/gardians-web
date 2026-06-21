@@ -298,6 +298,12 @@
   }
 
   .asap-image-wrapper { order: 2; }
+
+  .asap-features { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 479px) {
+  .hero__title { font-size: 1.875rem; }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
