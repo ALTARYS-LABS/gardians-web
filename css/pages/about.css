@@ -1,0 +1,204 @@
+/* About page styles */
+
+/* ============================================================
+   HISTOIRE
+   ============================================================ */
+.section-history {
+  background: var(--color-white);
+  padding: var(--spacing-section) 0;
+}
+
+.section-history__inner {
+  display: grid;
+  grid-template-columns: 65fr 35fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.section-history__text h2 {
+  color: var(--color-text-body);
+  margin-bottom: 8px;
+}
+
+.section-history__text p {
+  color: var(--color-text-body);
+  font-size: 0.95rem;
+  margin-top: 20px;
+  line-height: 1.75;
+}
+
+/* History stat cards */
+.history-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.history-stat {
+  background: var(--color-black);
+  padding: 24px 28px;
+  margin-bottom: 12px;
+}
+
+.history-stat__number {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.history-stat__number--yellow { color: var(--color-yellow); }
+.history-stat__number--white  { color: var(--color-white); }
+
+.history-stat__label {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 6px;
+}
+
+/* MEMIS / SGS Badges */
+.history-badges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 0;
+}
+
+.history-badge {
+  background: var(--color-gray-light);
+  padding: 16px;
+  border-top: 3px solid var(--color-yellow);
+}
+
+.history-badge__title {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--color-yellow);
+  margin-bottom: 4px;
+}
+
+.history-badge__sub {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+/* ============================================================
+   PRÉSENCE NATIONALE
+   ============================================================ */
+.section-presence {
+  background: var(--color-gray-light);
+  padding: var(--spacing-section) 0;
+  text-align: center;
+}
+
+.section-presence h2 {
+  color: var(--color-text-body);
+}
+
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 24px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.city-item {
+  border-left: 3px solid var(--color-yellow);
+  padding: 10px 16px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-white);
+}
+
+.city-name {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--color-text-body);
+}
+
+.city-tag {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   INFORMATIONS LÉGALES
+   ============================================================ */
+.section-legal {
+  background: var(--color-white);
+  padding: var(--spacing-section) 0;
+}
+
+.section-legal h2 {
+  color: var(--color-text-body);
+  margin-bottom: 8px;
+}
+
+.legal-table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 800px;
+  margin-top: 32px;
+}
+
+.legal-table tr {
+  border-bottom: 1px solid var(--color-gray-mid);
+}
+
+.legal-table tr:last-child {
+  border-bottom: none;
+}
+
+.legal-table td {
+  padding: 14px 16px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-text-body);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.legal-table__label {
+  font-weight: 600;
+  font-size: 0.8rem !important;
+  color: var(--color-text-muted) !important;
+  width: 220px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive about */
+@media (max-width: 767px) {
+  .section-history__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cities-grid { grid-template-columns: 1fr; }
+
+  .legal-table__label { width: 140px; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section-history__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cities-grid { grid-template-columns: repeat(2, 1fr); }
+}

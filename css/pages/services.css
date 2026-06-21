@@ -1,0 +1,117 @@
+/* Services page styles */
+
+/* ============================================================
+   ALL SERVICES GRID
+   ============================================================ */
+.section-all-services {
+  background: var(--color-white);
+  padding: var(--spacing-section) 0;
+}
+
+/* ============================================================
+   ASAP SECTION — SERVICES (extended)
+   ============================================================ */
+.section-asap--services {
+  background: var(--color-dark);
+  padding: var(--spacing-section) 0;
+}
+
+.section-asap--services .section-asap__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.section-asap--services .section-asap__content h2 {
+  color: var(--color-white);
+  margin-bottom: 8px;
+}
+
+.section-asap--services .section-asap__content > p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 16px;
+  font-size: 0.95rem;
+}
+
+/* Feature cards (extended version with description) */
+.asap-features-full {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.asap-feature-card {
+  background: var(--color-black);
+  padding: 20px;
+  border-radius: var(--radius);
+  border-left: 3px solid transparent;
+  transition: border-color var(--transition);
+}
+
+.asap-feature-card:hover {
+  border-left-color: var(--color-yellow);
+}
+
+.asap-feature-card__icon {
+  color: var(--color-yellow);
+  width: 28px;
+  height: 28px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.asap-feature-card__icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.asap-feature-card h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-white);
+  margin-bottom: 6px;
+}
+
+.asap-feature-card p {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+.asap-stores {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  margin-top: 20px;
+}
+
+.asap-stores a {
+  color: var(--color-yellow);
+}
+
+.asap-stores a:hover { text-decoration: underline; }
+
+/* Responsive services */
+@media (max-width: 767px) {
+  .section-asap--services .section-asap__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .asap-features-full {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section-asap--services .section-asap__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .asap-features-full { grid-template-columns: repeat(2, 1fr); }
+}

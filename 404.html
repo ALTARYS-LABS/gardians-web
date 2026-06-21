@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page introuvable — GARDIAN'S ASSISTANCE</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0D0D0D">
+  <link rel="icon" type="image/svg+xml" href="images/logo/gardians-logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <style>
+    body { background: var(--color-black); }
+    .error-page {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      padding: 24px; text-align: center;
+    }
+    .error-page__content { max-width: 480px; }
+    .error-page__code {
+      font-family: var(--font-heading); font-weight: 700; font-size: 7rem;
+      color: var(--color-yellow); line-height: 1; display: block; margin-bottom: 8px;
+    }
+    .error-page h1 { color: var(--color-white); font-size: 1.75rem; margin-bottom: 16px; }
+    .error-page p { color: rgba(255,255,255,0.6); font-size: 0.95rem; margin-bottom: 32px; line-height: 1.6; }
+    .error-page__links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .error-page .section-underline { margin: 12px auto 24px; }
+  </style>
+</head>
+<body>
+  <main class="error-page">
+    <div class="error-page__content">
+      <span class="error-page__code" aria-hidden="true">404</span>
+      <h1>Page introuvable</h1>
+      <div class="section-underline section-underline--center" aria-hidden="true"></div>
+      <p>La page que vous recherchez n'existe pas ou a été déplacée. Revenez à l'accueil ou contactez-nous.</p>
+      <div class="error-page__links">
+        <a href="index.html" class="btn btn--primary">Retour à l'accueil</a>
+        <a href="contact.html" class="btn btn--outline">Nous contacter</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

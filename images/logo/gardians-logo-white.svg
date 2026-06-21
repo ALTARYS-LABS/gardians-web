@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56" role="img" aria-label="GARDIAN'S ASSISTANCE">
+  <!-- Icon block: white border square version -->
+  <rect width="56" height="56" fill="#FFFFFF" fill-opacity="0.08" rx="2"/>
+  <!-- Stylized G — white -->
+  <path d="M28 10
+    C17.5 10 10 17.5 10 28
+    C10 38.5 17.5 46 28 46
+    C33.5 46 38.5 43.5 42 39.5
+    L42 27 L28 27 L28 31 L37.5 31
+    L37.5 37.5 C35 40 31.5 41.5 28 41.5
+    C20 41.5 14.5 35.8 14.5 28
+    C14.5 20.2 20 14.5 28 14.5
+    C32 14.5 35.5 16 38 18.5
+    L41 15.5 C37.5 12 33 10 28 10 Z"
+    fill="#FFFFFF"/>
+  <!-- Angular tail sweeping down-right -->
+  <path d="M38 32 L46 48 L42 48 L35 35 Z" fill="#FFFFFF"/>
+  <!-- Bottom strip: white/transparent -->
+  <rect y="46" width="56" height="10" fill="#FFFFFF" fill-opacity="0.15"/>
+  <text x="28" y="54" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="5.5" fill="#FFFFFF" fill-opacity="0.9" text-anchor="middle" letter-spacing="0.8">GARDIAN'S</text>
+
+  <!-- Text lockup: all white -->
+  <text x="72" y="26" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="20" fill="#FFFFFF" letter-spacing="0.5">GARDIAN'S</text>
+  <text x="72" y="44" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="13" fill="#FFFFFF" fill-opacity="0.85" letter-spacing="2.5">ASSISTANCE</text>
+</svg>

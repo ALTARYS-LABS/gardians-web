@@ -1,0 +1,29 @@
+:root {
+  /* Colors */
+  --color-black:      #0D0D0D;
+  --color-dark:       #1A1A1A;
+  --color-yellow:     #F5C400;
+  --color-white:      #FFFFFF;
+  --color-gray-light: #F5F5F5;
+  --color-gray-mid:   #E0E0E0;
+  --color-text-body:  #1A1A1A;
+  --color-text-muted: #666666;
+
+  /* Typography */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+  /* Spacing & layout */
+  --radius:          4px;
+  --transition:      0.2s ease;
+  --underline-yellow: 3px solid var(--color-yellow);
+  --spacing-section: 80px;
+  --container-max:   1200px;
+  --container-pad:   24px;
+
+  /* Breakpoints (reference only — use in media queries) */
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+}

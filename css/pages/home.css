@@ -1,0 +1,307 @@
+/* Home page styles */
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  background: var(--color-black);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 72px;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  gap: 64px;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.hero__badge {
+  display: block;
+  color: var(--color-yellow);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.hero__title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: var(--color-white);
+  line-height: 1.1;
+}
+
+.hero__sub {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 440px;
+  margin-top: 16px;
+  line-height: 1.7;
+}
+
+.hero__ctas {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+/* Hero image frame with L-shaped yellow corners */
+.hero__image-frame {
+  position: relative;
+}
+
+.hero__image-frame::before,
+.hero__image-frame::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+}
+
+.hero__image-frame::before {
+  top: -8px;
+  left: -8px;
+  border-top: 3px solid var(--color-yellow);
+  border-left: 3px solid var(--color-yellow);
+}
+
+.hero__image-frame::after {
+  bottom: -8px;
+  right: -8px;
+  border-bottom: 3px solid var(--color-yellow);
+  border-right: 3px solid var(--color-yellow);
+}
+
+.hero__image-frame .corner-tr,
+.hero__image-frame .corner-bl {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+}
+
+.hero__image-frame .corner-tr {
+  top: -8px;
+  right: -8px;
+  border-top: 3px solid var(--color-yellow);
+  border-right: 3px solid var(--color-yellow);
+}
+
+.hero__image-frame .corner-bl {
+  bottom: -8px;
+  left: -8px;
+  border-bottom: 3px solid var(--color-yellow);
+  border-left: 3px solid var(--color-yellow);
+}
+
+.hero__image-placeholder {
+  background: #2A2A2A;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+}
+
+/* ============================================================
+   STATS BAR
+   ============================================================ */
+.stats-bar {
+  background: var(--color-yellow);
+  padding: 40px 0;
+}
+
+.stats-bar__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.stat-item__number {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--color-black);
+  line-height: 1;
+}
+
+.stat-item__label {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--color-black);
+}
+
+.stat-item__separator {
+  width: 1px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   SERVICES SECTION (home preview)
+   ============================================================ */
+.section-services {
+  background: var(--color-white);
+  padding: var(--spacing-section) 0;
+}
+
+.section-services__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-services__header h2 {
+  color: var(--color-text-body);
+}
+
+/* ============================================================
+   ASAP SECTION
+   ============================================================ */
+.section-asap {
+  background: var(--color-dark);
+  padding: var(--spacing-section) 0;
+}
+
+.section-asap__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.section-asap__content h2 {
+  color: var(--color-white);
+  margin-bottom: 8px;
+}
+
+.section-asap__content p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 16px;
+  font-size: 0.95rem;
+}
+
+.asap-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.asap-feature {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.asap-feature__icon {
+  color: var(--color-yellow);
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.asap-feature__icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.asap-stores {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  margin-top: 20px;
+}
+
+.asap-stores a {
+  color: var(--color-yellow);
+  transition: text-decoration var(--transition);
+}
+
+.asap-stores a:hover { text-decoration: underline; }
+
+.asap-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.asap-image-placeholder {
+  border: 2px solid var(--color-yellow);
+  background: #111;
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+}
+
+/* Responsive home */
+@media (max-width: 767px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 0 40px;
+  }
+
+  .hero__title { font-size: 2.25rem; }
+
+  .stat-item__separator { display: none; }
+
+  .stats-bar__inner {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .section-asap__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .asap-image-wrapper { order: 2; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero__inner { gap: 40px; }
+  .hero__title { font-size: 2.75rem; }
+  .section-asap__inner { gap: 40px; }
+}
