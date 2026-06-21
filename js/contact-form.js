@@ -76,7 +76,7 @@
     btn.disabled = true;
     btn.textContent = 'Envoi en cours…';
 
-    // Static form — simulate submission
+    // Static form - simulate submission
     // TODO: Connect to Formspree or Netlify Forms in production
     setTimeout(function () {
       btn.disabled = false;

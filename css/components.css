@@ -1,4 +1,4 @@
-/* Components — nav, footer, buttons, cards, forms, page-hero, CTA banner */
+/* Components - nav, footer, buttons, cards, forms, page-hero, CTA banner */
 
 /* ============================================================
    BUTTONS
@@ -140,7 +140,7 @@
   width: 24px;
   height: 2px;
   background: var(--color-white);
-  border-radius: 2px;
+  border-radius: var(--radius);
   transition: transform var(--transition), opacity var(--transition);
 }
 
