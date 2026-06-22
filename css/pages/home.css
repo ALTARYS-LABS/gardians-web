@@ -66,6 +66,10 @@
   }
 }
 
+.hero__cert {
+  margin-top: 20px;
+}
+
 /* Hero image frame with L-shaped yellow corners */
 .hero__image-frame {
   position: relative;

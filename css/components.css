@@ -314,6 +314,74 @@
   font-size: 0.8rem;
 }
 
+/* ============================================================
+   ISO 9001 CERTIFICATION BADGE & HIGHLIGHT
+   ============================================================ */
+.cert-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: var(--color-yellow);
+  color: var(--color-black);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  border-radius: var(--radius);
+}
+
+.cert-badge svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.cert-badge--outline {
+  background: transparent;
+  color: var(--color-yellow);
+  border: 1px solid var(--color-yellow);
+}
+
+.footer__cert {
+  margin-bottom: 20px;
+}
+
+.cert-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 24px;
+  padding: 20px 24px;
+  background: var(--color-gray-light);
+  border-top: 3px solid var(--color-yellow);
+  border-radius: var(--radius);
+}
+
+.cert-highlight__icon {
+  flex-shrink: 0;
+  color: var(--color-yellow);
+}
+
+.cert-highlight__icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.cert-highlight__title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-text-body);
+  margin-bottom: 4px;
+}
+
+.cert-highlight__text {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
 @media (max-width: 767px) {
   .footer__main {
     grid-template-columns: 1fr;
